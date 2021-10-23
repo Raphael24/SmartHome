@@ -122,9 +122,8 @@ class Smarthome(QtWidgets.QDialog):
         print("Bis zum nächsten Mal")
         self.close()
 
-
-
-app = QtWidgets.QApplication(sys.argv)
-dialog = Smarthome()
-dialog.show()
-sys.exit(app.exec())
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    dialog = Smarthome()
+    dialog.show()
+    sys.exit(app.exec())
